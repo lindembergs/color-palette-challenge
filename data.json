@@ -1,0 +1,136 @@
+
+  [
+    {
+      "id": 1,
+      "name": "Terra Cotta",
+      "colorPalette": [
+        "#f3e6bc",
+        "#f1c972",
+        "#f5886b",
+        "#72ae95",
+        "#5a3226"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Serenidade Quente",
+      "colorPalette": [
+        "#d3dbd9",
+        "#a4bdbc",
+        "#ffdabf",
+        "#ffbf91",
+        "#ff9a52"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sombra Púrpura",
+      "colorPalette": [
+        "#4e4754",
+        "#665f6d",
+        "#7f7786",
+        "#97909f",
+        "#b0a8b8"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Amanhecer Radiante",
+      "colorPalette": [
+        "#faf4e0",
+        "#d2ff1f",
+        "#ffc300",
+        "#ff6a00",
+        "#3b0c2c"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Calor Ardente",
+      "colorPalette": [
+        "#c82a05",
+        "#d6441c",
+        "#e45f34",
+        "#f1794b",
+        "#ff9362"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Mistura Urbana",
+      "colorPalette": [
+        "#000000",
+        "#a69682",
+        "#7e9991",
+        "#737373",
+        "#d8770c"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Magia do Crepúsculo",
+      "colorPalette": [
+        "#ff0092",
+        "#ffca1b",
+        "#b6ff00",
+        "#228dff",
+        "#ba01ff"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Mistério Noturno",
+      "colorPalette": [
+        "#edf6ee",
+        "#d1c089",
+        "#b3204d",
+        "#412e28",
+        "#151101"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Oceano Tropical",
+      "colorPalette": [
+        "#69f4fd",
+        "#4fe1ea",
+        "#35ced7",
+        "#1abbc4",
+        "#00a8b1"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sutil Pôr do Sol",
+      "colorPalette": [
+        "#260d33",
+        "#003f69",
+        "#106b87",
+        "#157a8c",
+        "#b3aca4"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Fantasia Floral",
+      "colorPalette": [
+        "#cf36aa",
+        "#db51bf",
+        "#e76cd5",
+        "#f386ea",
+        "#ffa1ff"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Tons de Outono",
+      "colorPalette": [
+        "#d1b68d",
+        "#87555c",
+        "#492d49",
+        "#51445f",
+        "#5a5c75"
+      ]
+    }
+  ]
+    
