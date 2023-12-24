@@ -7,7 +7,10 @@ function loadRandomPalette() {
       const palettes = data;
       const randomIndex = Math.floor(Math.random() * palettes.length);
       const palette = palettes[randomIndex];
-      console.log(palette);
+
+      const paletteName = document.querySelector(".header h2");
+      paletteName.textContent = palette.name;
+      console.log(paletteName);
     });
 }
 
