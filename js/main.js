@@ -27,10 +27,8 @@ function showColors(colors) {
     colorBox.textContent = colors[index];
 
     const colorCode = colors[index];
-    const colorBoxBackground = (item.querySelector(
-      ".exadecimal"
-    ).parentNode.style.colorBoxBackground = colorCode);
+
+    item.style.backgroundColor = colorCode;
   });
 }
-showColors();
-loadRandomPalette();
+window.addEventListener("load", loadRandomPalette());
