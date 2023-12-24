@@ -9,7 +9,6 @@ function shuffleArray(array) {
 function shuffleColors() {
   const scrambledColors = shuffleArray([...originalColors]);
   showColors(scrambledColors);
-  console.log(scrambledColors);
 }
 // criando uma função para buscar na "api" e carregar a paleta de acordo com o index random do Array, .then utiliza promisses, correto? também é possivel utilizar async await, correto?.
 function loadRandomPalette() {
@@ -26,6 +25,9 @@ function loadRandomPalette() {
       originalColors = [...palette.colorPalette];
 
       showColors(originalColors);
+
+      const randomButton = document.querySelector(".btn-random");
+      randomButton.addEventListener("click", shuffleColors); // Adicionando evento de clique corretamente
     })
     .catch((error) => {
       console.error("Erro ao carregar as paletas de cores:", error);
@@ -43,4 +45,4 @@ function showColors(colors) {
     item.style.backgroundColor = colorCode;
   });
 }
-window.addEventListener("load", loadRandomPalette());
+window.addEventListener("load", loadRandomPalette);
