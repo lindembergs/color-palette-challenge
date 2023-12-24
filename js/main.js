@@ -12,6 +12,8 @@ function loadRandomPalette() {
       paletteName.textContent = palette.name;
 
       originalColors = [...palette.colorPalette];
+
+      showColors(originalColors);
     })
     .catch((error) => {
       console.error("Erro ao carregar as paletas de cores:", error);
