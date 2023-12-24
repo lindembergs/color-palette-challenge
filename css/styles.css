@@ -12,7 +12,21 @@ body {
 body {
   font-family: sans-serif;
 }
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+.btn-random {
+  background-color: blue;
+  border: none;
+  border-radius: 3px;
+  color: #f9f9f9;
+  padding-inline: 5px;
+}
 .color-container {
   margin: 150px auto;
   max-width: 800px;
@@ -48,4 +62,9 @@ body {
   width: 20%;
   height: 600px;
   background-color: rgb(4, 37, 4);
+}
+
+.ul-colors li:hover {
+  width: 30%;
+  transition: 0.5s ease-in-out;
 }
