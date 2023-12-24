@@ -41,8 +41,42 @@ function showColors(colors) {
     colorBox.textContent = colors[index];
 
     const colorCode = colors[index];
-
     item.style.backgroundColor = colorCode;
+
+    const copyButton = item.querySelector(".btn-copy");
+    copyButton.addEventListener("click", () => handleCopyClick(colors[index]));
   });
 }
+
+function handleCopyClick(copyColor) {
+  navigator.clipboard
+    .writeText(copyColor)
+    .then(() => {
+      const tooltip = document.createElement("div");
+      tooltip.innerHTML = `<div class="tooltip">
+      <img src="img/grenn-ball.jpg" alt="" />
+      <p>Cor copiada para a área de transferência!</p>
+    </div>`;
+
+      tooltip.style.position = "fixed";
+      tooltip.style.background = "#fff";
+      tooltip.style.color = "black";
+      tooltip.style.padding = "5px 10px";
+      tooltip.style.borderRadius = "5px";
+      tooltip.style.top = "95%";
+      tooltip.style.left = "80%";
+      tooltip.style.transform = "translate(-50%, -50%)";
+      tooltip.style.zIndex = "2";
+
+      document.body.appendChild(tooltip);
+
+      setTimeout(() => {
+        document.body.removeChild(tooltip);
+      }, 2000);
+    })
+    .catch((err) => {
+      console.error("Erro ao copiar para a área de transferência: ", err);
+    });
+}
+
 window.addEventListener("load", loadRandomPalette);
