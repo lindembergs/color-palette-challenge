@@ -12,11 +12,23 @@ function loadRandomPalette() {
       paletteName.textContent = palette.name;
 
       originalColors = [...palette.colorPalette];
-      console.log(originalColors);
     })
     .catch((error) => {
       console.error("Erro ao carregar as paletas de cores:", error);
     });
 }
 
+function showColors(colors) {
+  const listItems = document.querySelectorAll(".ul-colors li");
+  listItems.forEach((item, index) => {
+    const colorBox = item.querySelector(".exadecimal");
+    colorBox.textContent = colors[index];
+
+    const colorCode = colors[index];
+    const colorBoxBackground = (item.querySelector(
+      ".exadecimal"
+    ).parentNode.style.colorBoxBackground = colorCode);
+  });
+}
+showColors();
 loadRandomPalette();
