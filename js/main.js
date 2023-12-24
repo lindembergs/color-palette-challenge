@@ -10,7 +10,12 @@ function loadRandomPalette() {
 
       const paletteName = document.querySelector(".header h2");
       paletteName.textContent = palette.name;
-      console.log(paletteName);
+
+      originalColors = [...palette.colorPalette];
+      console.log(originalColors);
+    })
+    .catch((error) => {
+      console.error("Erro ao carregar as paletas de cores:", error);
     });
 }
 
