@@ -1,4 +1,11 @@
 let originalColors = [];
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    ([array[i], array[j]] = [array[j]]), array[i];
+  }
+  return array;
+}
 // criando uma função para buscar na "api" e carregar a paleta de acordo com o index random do Array, .then utiliza promisses, correto? também é possivel utilizar async await, correto?.
 function loadRandomPalette() {
   fetch("../data.json")
