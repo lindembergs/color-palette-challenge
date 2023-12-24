@@ -5,7 +5,9 @@ function loadRandomPalette() {
     .then((response) => response.json())
     .then((data) => {
       const palettes = data;
-      console.log(palettes);
+      const randomIndex = Math.floor(Math.random() * palettes.length);
+      const palette = palettes[randomIndex];
+      console.log(palette);
     });
 }
 
