@@ -12,3 +12,40 @@ body {
 body {
   font-family: sans-serif;
 }
+
+.color-container {
+  margin: 150px auto;
+  max-width: 800px;
+  height: 800px;
+}
+.ul-colors {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.list-color1 {
+  width: 20%;
+  height: 600px;
+  background-color: green;
+}
+.list-color2 {
+  width: 20%;
+  height: 600px;
+  background-color: rgb(177, 233, 75);
+}
+.list-color3 {
+  width: 20%;
+  height: 600px;
+  background-color: rgb(0, 128, 107);
+}
+.list-color4 {
+  width: 20%;
+  height: 600px;
+  background-color: rgb(41, 31, 133);
+}
+.list-color5 {
+  width: 20%;
+  height: 600px;
+  background-color: rgb(4, 37, 4);
+}
