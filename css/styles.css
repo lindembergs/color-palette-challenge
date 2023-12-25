@@ -73,6 +73,9 @@ body {
 .ul-colors li:hover {
   width: 40%;
 }
+.ul-colors li:hover .btn-copy {
+  display: block;
+}
 
 ul li {
   position: relative;
@@ -92,6 +95,7 @@ img {
   width: 100%;
   margin-top: 80px;
   cursor: pointer;
+  display: none;
 }
 
 .exadecimal {
