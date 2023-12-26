@@ -1,4 +1,6 @@
+const paletteName = document.querySelector(".header h2");
 let originalColors = [];
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -21,7 +23,6 @@ function loadRandomPalette() {
 
       const paletteName = document.querySelector(".header h2");
       paletteName.textContent = palette.name;
-
       originalColors = [...palette.colorPalette];
 
       showColors(originalColors);
@@ -69,6 +70,8 @@ function handleCopyClick(copyColor) {
       tooltip.style.zIndex = "2";
 
       document.body.appendChild(tooltip);
+
+      paletteName.style.color = copyColor;
 
       setTimeout(() => {
         document.body.removeChild(tooltip);
