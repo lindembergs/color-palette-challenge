@@ -71,7 +71,7 @@ body {
 }
 
 .ul-colors li:hover {
-  width: 40%;
+  width: 30%;
 }
 .ul-colors li:hover .btn-copy {
   display: block;
