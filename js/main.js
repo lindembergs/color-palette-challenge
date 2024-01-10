@@ -55,7 +55,7 @@ function handleCopyClick(copyColor) {
     .then(() => {
       const tooltip = document.createElement("div");
       tooltip.innerHTML = `<div class="tooltip">
-      <img src="img/green-ball.jpg" alt="bolinha verde do tooltip" />
+      <img src="img/green-ball-removebg.png" alt="bolinha verde do tooltip" />
       <p>Cor copiada para a área de transferência!</p>
     </div>`;
 
